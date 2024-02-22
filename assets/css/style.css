@@ -139,6 +139,7 @@ ul li a,a{
 .calculator_box {
 	background: hsla(0, 0%, 3%, 1);
 	padding: 45px 30px;
+	border-radius: 20px;
 }
 
 .input_group select ,
