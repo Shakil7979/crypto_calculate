@@ -440,6 +440,14 @@ ul li a,a{
 	text-decoration: underline;
 }
 
+#v-pills-tab button.active i {
+	color: #fff;
+}
+
+#v-pills-tab button i {
+	color: #0B0D71;
+}
+
 /*======================  Header CSS  ======================*/
 
 /* 
