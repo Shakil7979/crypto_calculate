@@ -1,19 +1,146 @@
-@media all and (max-width: 1199px){
+@media all and (max-width: 1400px){
+    .banner-text h2 {
+        font-size: 46px; 
+        line-height: 60px;
+    }
+}
 
+@media all and (max-width: 1199px){
+    .top_header_content h4 { 
+        font-size: 16px; 
+        line-height: 27px;
+    }
+    .footer ul { 
+        gap: 35px;
+    }
 }
 
 @media all and (max-width: 991px){
-	
+    .top_header_content h4 {
+        font-size: 14px;
+        line-height: 27px;
+        text-align: center;
+    }
+    .banner-text h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .banner-text p { 
+        font-size: 16px;
+        line-height: 23px; 
+    }
+    .footer ul li a img {
+        width: 100px;
+    }
+    .footer ul {
+        height: 133px; 
+    }
 }
 
 @media all and (max-width: 767px){
-	
+    .top_header_content h4 { 
+        line-height: 22px; 
+    }
+    .banner_bg {
+        position: inherit; 
+        width: 100%;
+    }
+    .banner_area { 
+        gap: 35px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .btn_1 { 
+        height: 70px; 
+        font-size: 18px; 
+    }
+    .section_padding {
+        padding: 40px 0;
+    }
+    .section_title h3 {
+        font-size: 28px; 
+        line-height: 40px;
+    }
+    .input_group label {
+        font-size: 16px;
+        line-height: 24px; 
+    }
+    .input_group select, .input_group input { 
+        border: 1px solid hsla(0, 0%, 100%, 1); 
+        height: 50px; 
+        font-size: 14px;  
+    }
+    .form_title h3 {
+        font-size: 16px;
+        line-height: 22px; 
+    }
+    .btn_2 { 
+        height: 60px; 
+        border: 1px solid hsla(84, 100%, 59%, 1); 
+        font-size: 16px; 
+    }
+    .btn_3 { 
+        height: 60px; 
+        border: 1px solid transparent; 
+        font-size: 16px; 
+    }
+    .ask_box .d-flex.align-items-start { 
+        flex-direction: column; 
+    }
+    .ask_box::after { 
+        display: none;
+    }
+    .box_ask { 
+        background: #000;
+        padding: 25px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    #v-pills-tab { 
+        width: 100%;
+    }
+    .box_ask h3 {
+        font-size: 16px; 
+    }
+    .sk_title span { 
+        flex: 0 0 auto;
+    }
+    .ask_box {
+        margin-top: 0; 
+    }
+    .sk_title span { 
+        width: 15px;
+        height: 15px; 
+    }
+    .sk_title { 
+        gap: 8px;
+    }
 }
 
 @media all and (max-width: 575px){
-	
+    .logo a img {
+        width: 82px;
+    }
+    .menu a img {
+        width: 46px;
+    }
+    .footer ul {
+        gap: 8px;
+    }
+    .banner-text p {
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
 
 @media all and (max-width: 450px){
-	
+    .footer ul { 
+        gap: 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer ul li{
+        flex: 0 0 50%;
+        text-align: center;
+    }
 }

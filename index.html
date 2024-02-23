@@ -103,6 +103,39 @@
                                             <h3>Add Symbol for Current Price (Optional)</h3>
                                         </div>
                                     </div>
+                                    <div class="col-md-4">
+                                        <div class="input_group">
+                                            <label for="">Order Side</label><br>
+                                            <label class="toggle" id="toggle1">
+                                                <input type="checkbox">
+                                                <span class="slider"></span>
+                                                <span class="switch-text">Long</span>
+                                                <span class="switch-text text_sk">Short</span>
+                                              </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input_group">
+                                            <label for="">Entry Type</label><br>
+                                            <label class="toggle" id="toggle2">
+                                                <input type="checkbox">
+                                                <span class="slider"></span>
+                                                <span class="switch-text">Single</span>
+                                                <span class="switch-text text_sk">Multiple</span>
+                                              </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input_group">
+                                            <label for="">Entry Type</label><br>
+                                            <label class="toggle" id="toggle3">
+                                                <input type="checkbox">
+                                                <span class="slider"></span>
+                                                <span class="switch-text">Fixed</span>
+                                                <span class="switch-text text_sk">Incremental</span>
+                                              </label>
+                                        </div>
+                                    </div>
                                     <div class="col-md-6">
                                         <div class="input_group">
                                             <label for="">Exchange</label><br>
@@ -156,11 +189,87 @@
                 </div>
             </section>
             <!--=====================  End Calculator Area  ====================--> 
+
+            <!--=====================  Start Ask Area  ====================--> 
+            <section class="ask_area section_padding">
+                <div class="container">
+                    <div class="section_title">
+                        <h3>Frequently Asked  <span>Questions</span></h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="ask_box">
+                                <div class="d-flex align-items-start">
+                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><div class="sk_title"><span></span>What is Crypto Trade Calculator?</div><i class="fa-solid fa-angle-right"></i></button>
+                                      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><div class="sk_title"><span></span>How do I use the Crypto Trade Calculator?</div><i class="fa-solid fa-angle-right"></i></button>
+                                      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><div class="sk_title"><span></span>Why is there no option to add leverage?</div><i class="fa-solid fa-angle-right"></i></button>
+                                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><div class="sk_title"><span></span>How does the Crypto Trade Calculator manage risk?</div><i class="fa-solid fa-angle-right"></i></button>
+                                      <button class="nav-link" id="v-pills-settings2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings2" type="button" role="tab" aria-controls="v-pills-settings2" aria-selected="false"><div class="sk_title"><span></span>How accurate is the Crypto Trade Calculator?</div><i class="fa-solid fa-angle-right"></i></button>
+                                      <button class="nav-link" id="v-pills-settings3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings3" type="button" role="tab" aria-controls="v-pills-settings3" aria-selected="false"><div class="sk_title"><span></span>Is there a user guide available?</div><i class="fa-solid fa-angle-right"></i></button>
+                                    </div>
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <div class="box_ask">
+                                            <h3>What is Crypto Trade Calculator?</h3>
+                                            <p>Crypto Trade Calculator is a tool designed to help cryptocurrency traders efficiently manage risk and optimize their trading strategies. The primary objective of this tool is to assist traders in establishing robust risk management practices. It achieves this by grounding all calculations in the maximum amount of USD you are willing to risk losing.</p>
+                                        </div>
+                                      </div>
+                                      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <div class="box_ask">
+                                            <h3>How do I use the Crypto Trade Calculator?</h3>
+                                            <p>To use the calculator, enter your account balance, risk per trade, and other trade details such as exchange, symbol, order side, entry type, and sizing. The calculator will then compute the optimal entry orders, take profit orders, and potential profit and loss scenarios.</p>
+                                        </div>
+                                      </div>
+                                      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                        <div class="box_ask">
+                                            <h3>Why is there no option to add leverage?</h3>
+                                            <p>The tool doesn't require an option to input leverage when calculating a trade. Whether you're engaging in a leverage trade or not, factors like risk percentage remain consistent. Essentially, you decide on the size of the trade you wish to make. Leverage simply implies that you'll be using a smaller amount of capital for the trade. However, the associated risks and outcomes remain unchanged. It's crucial to have a solid grasp of risk management prior to beginning trading.</p>
+
+                                        </div>
+                                      </div>
+                                      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                        <div class="box_ask">
+                                            <h3>How does the Crypto Trade Calculator manage risk?</h3>
+                                            <p>The tool manages risk by allowing traders to specify the percentage of their account balance they are willing to risk on a single trade. It then calculates the trade size and other parameters accordingly, ensuring the risk is kept within the specified limit.</p>
+
+                                        </div>
+                                      </div>
+                                      <div class="tab-pane fade" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings2-tab">
+                                        <div class="box_ask">
+                                            <h3>How accurate is the Crypto Trade Calculator?</h3>
+                                            <p>Yes, there is a user guide available on the website. You can access it by clicking <a href="#">here</a>.</p>
+                                        </div>
+                                      </div>
+                                      <div class="tab-pane fade" id="v-pills-settings3" role="tabpanel" aria-labelledby="v-pills-settings3-tab">
+                                        <div class="box_ask">
+                                            <h3>What is Crypto Trade Calculator?</h3>
+                                            <p>Crypto Trade Calculator is a tool designed to help cryptocurrency traders efficiently manage risk and optimize their trading strategies. The primary objective of this tool is to assist traders in establishing robust risk management practices. It achieves this by grounding all calculations in the maximum amount of USD you are willing to risk losing.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--=====================  End Ask Area  ====================--> 
         </main>
                 
         <!--=====================  Start Header Area  ====================-->
         <footer class="footer_area">
-
+            <div class="container">
+                <div class="footer">
+                    <ul>
+                        <li><a href="#"><img src="assets/images/1.png" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/2.png" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/3.png" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/4.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
         <!--=====================  End Header Area  ====================-->
  
@@ -172,9 +281,24 @@
         <script src="assets/js/popper.min.js"></script>
         <!-- Bootstrap -->
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
         <!-- Modernizr -->
         <script src="assets/js/modernizr-3.11.2.min.js"></script>
         <!-- Custom JS (Handed)-->
         <script src="assets/js/scripts.js"></script>
+
+        <script>
+            window.onload = function() {
+              var toggles = document.querySelectorAll('.toggle');
+              toggles.forEach(function(toggle) {
+                var switchTexts = toggle.querySelectorAll('.switch-text');
+                var maxWidth = 0;
+                switchTexts.forEach(function(switchText) {
+                  maxWidth = Math.max(maxWidth, switchText.clientWidth);
+                });
+                toggle.style.width = maxWidth + 40 + 'px'; // Add some padding for aesthetics
+              });
+            }
+          </script>
     </body>
 </html>
