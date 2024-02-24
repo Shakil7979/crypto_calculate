@@ -25,6 +25,7 @@ $(document).ready(function(){
 		} 
 		return false;
 	});
+	
 
 	$(document).on('click','.long_btn3',function(){
 		$('.long_btn3').removeClass('active');

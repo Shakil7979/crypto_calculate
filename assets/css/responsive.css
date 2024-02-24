@@ -207,6 +207,15 @@
     .footer_area {
         padding: 20px 0px;
     }
+    .single_result_item {
+        height: 145px;
+    }
+    .single_result_item h3 { 
+        line-height: 40px; 
+    }
+    .single_result_item h4 { 
+        line-height: 40px; 
+    }
 }
 
 @media all and (max-width: 450px){
