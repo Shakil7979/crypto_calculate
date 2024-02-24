@@ -41,7 +41,11 @@
                             <a href="#"><img src="assets/images/logo.png" alt=""></a>
                         </div>
                         <div class="menu">
-                            <a href="#"><img src="assets/images/menu.png" alt=""></a>
+                            <a href="#" class="menu_bars"><img src="assets/images/menu.png" alt=""></a>
+                            <div id="hamburgerMenuLinks" class="hamburger-menu-links">
+                                <a href="#">Calculator</a>
+                                <a href="#">User Guide</a> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,42 +123,55 @@
                                             <input type="text" name="" placeholder="Type to search..." id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4"> 
                                         <div class="input_group">
                                             <label for="">Order Side</label><br>
-                                            <label class="toggle" id="toggle1">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                                <span class="switch-text">Long</span>
-                                                <span class="switch-text text_sk">Short</span>
-                                              </label>
+                                            <ul class="switch_ul">
+                                                <li><a href="#" class="long_btn active" data_id="1">Long</a></li>
+                                                <li><a href="#" class="long_btn" data_id="2">Short</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4"> 
                                         <div class="input_group">
                                             <label for="">Entry Type</label><br>
-                                            <label class="toggle" id="toggle2">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                                <span class="switch-text">Single</span>
-                                                <span class="switch-text text_sk">Multiple</span>
-                                              </label>
+                                            <ul class="switch_ul switch_ul2">
+                                                <li><a href="#" class="long_btn2 active" data_id="1">Single</a></li>
+                                                <li><a href="#" class="long_btn2" data_id="2">Multiple</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4"> 
                                         <div class="input_group">
                                             <label for="">Entry Type</label><br>
-                                            <label class="toggle" id="toggle3">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                                <span class="switch-text">Fixed</span>
-                                                <span class="switch-text text_sk">Incremental</span>
-                                              </label>
+                                            <ul class="switch_ul switch_ul3">
+                                                <li><a href="#" class="long_btn3 long_btn33" data_id="1">Fixed</a></li>
+                                                <li><a href="#" class="long_btn3" data_id="2">Incremental</a></li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-12 multiple_filed">
+                                        <div class="input_group">
+                                            <label for=""> Number of Entry Orders </label><br>
+                                            <select name="" id="">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="input_group">
                                             <label for="">Entry Order 1</label><br>
+                                            <input type="text" name="" placeholder="Enter entry order here..." id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 multiple_filed">
+                                        <div class="input_group">
+                                            <label for="">Entry Order 2</label><br>
                                             <input type="text" name="" placeholder="Enter entry order here..." id="">
                                         </div>
                                     </div>
@@ -313,6 +330,110 @@
                                   </div>
                                   
                             </div>
+                            <div class="ask_boxx">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <div class="sk_title"><span></span>What is Crypto Trade Calculator?</div><i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="box_ask">
+                                                <h3>What is Crypto Trade Calculator?</h3>
+                                                <p>Crypto Trade Calculator is a tool designed to help cryptocurrency traders efficiently manage risk and optimize their trading strategies. The primary objective of this tool is to assist traders in establishing robust risk management practices. It achieves this by grounding all calculations in the maximum amount of USD you are willing to risk losing.</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <div class="sk_title"><span></span>How do I use the Crypto Trade Calculator?</div><i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="box_ask">
+                                                <h3>How do I use the Crypto Trade Calculator?</h3>
+                                                <p>To use the calculator, enter your account balance, risk per trade, and other trade details such as exchange, symbol, order side, entry type, and sizing. The calculator will then compute the optimal entry orders, take profit orders, and potential profit and loss scenarios.</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <div class="sk_title"><span></span>Why is there no option to add leverage?</div><i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="box_ask">
+                                                <h3>Why is there no option to add leverage?</h3>
+                                                <p>The tool doesn't require an option to input leverage when calculating a trade. Whether you're engaging in a leverage trade or not, factors like risk percentage remain consistent. Essentially, you decide on the size of the trade you wish to make. Leverage simply implies that you'll be using a smaller amount of capital for the trade. However, the associated risks and outcomes remain unchanged. It's crucial to have a solid grasp of risk management prior to beginning trading.</p>
+    
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <div class="sk_title"><span></span>How does the Crypto Trade Calculator manage risk?</div><i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="box_ask">
+                                                <h3>How does the Crypto Trade Calculator manage risk?</h3>
+                                                <p>The tool manages risk by allowing traders to specify the percentage of their account balance they are willing to risk on a single trade. It then calculates the trade size and other parameters accordingly, ensuring the risk is kept within the specified limit.</p>
+    
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <div class="sk_title"><span></span>How accurate is the Crypto Trade Calculator?</div><i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="box_ask">
+                                                <h3>How accurate is the Crypto Trade Calculator?</h3>
+                                                <p>Yes, there is a user guide available on the website. You can access it by clicking <a href="#">here</a>.</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            <div class="sk_title"><span></span>Is there a user guide available?</div><i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="box_ask">
+                                                <h3>What is Crypto Trade Calculator?</h3>
+                                                <p>Crypto Trade Calculator is a tool designed to help cryptocurrency traders efficiently manage risk and optimize their trading strategies. The primary objective of this tool is to assist traders in establishing robust risk management practices. It achieves this by grounding all calculations in the maximum amount of USD you are willing to risk losing.</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+
+
+                                  </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -351,9 +472,42 @@
 
         <script>
 
-            	$('.toggle').click(function(){
-                    console.log($(this + 'input').val())
-                })
+            $(document).on('click','.long_btn',function(){
+                $('.long_btn').removeClass('active');
+                $(this).addClass('active');
+
+                return false;
+            });
+
+            $(document).on('click','.long_btn2',function(){
+                $('.long_btn2').removeClass('active');
+                $(this).addClass('active');
+                var data_id = $(this).attr('data_id'); 
+                if(data_id == 2){ 
+                    $('.switch_ul3').removeClass('long_3_disable');
+                    $('.long_btn33').addClass('active');
+                    $('.multiple_filed').show();
+                }else{
+                    $('.long_btn33').removeClass('active');
+                    $('.switch_ul3').addClass('long_3_disable');
+                    $('.multiple_filed').hide();
+                } 
+                return false;
+            });
+
+            $(document).on('click','.long_btn3',function(){
+                $('.long_btn3').removeClass('active');
+                $(this).addClass('active');
+
+                return false;
+            });
+
+            $(document).on('click','.menu_bars',function(){ 
+                $('.hamburger-menu-links').slideToggle();
+
+                return false;
+            });
+            
 
             window.onload = function() {
               var toggles = document.querySelectorAll('.toggle');

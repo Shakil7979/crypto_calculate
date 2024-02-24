@@ -163,6 +163,16 @@
     .calculator_box { 
         padding: 30px 20px; 
     }
+    .ask_box {
+        display: none;
+    }
+    .box_ask { 
+        padding: 0; 
+    }
+
+    .ask_boxx {
+        display: block;
+    }
 }
 
 @media all and (max-width: 575px){
