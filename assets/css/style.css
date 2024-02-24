@@ -333,6 +333,10 @@ ul li a,a{
 	background-color: #333333; 
 } 
 
+#toggle3 input[type="checkbox"]:checked + .slider + .switch-text {
+	color: black;
+  }
+
 /*======================  Footer CSS  ======================*/
 .footer_area {
 	background: #000;
