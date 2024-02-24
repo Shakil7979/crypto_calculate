@@ -386,6 +386,8 @@ ul li a,a{
 	display: flex;
 	align-items: center;
 	gap: 15px;
+	width: 100%;
+	max-width: 94%;
 }
 
 .ask_area {
@@ -684,7 +686,7 @@ ul li a,a{
 }
 
 .accordion-body {
-	background: #000;
+	background: #262626;
 	padding: 20px;
 }
 

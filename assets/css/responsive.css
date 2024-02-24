@@ -108,8 +108,8 @@
     .ask_box::after { 
         display: none;
     }
-    .box_ask { 
-        background: #000;
+    .box_ask {
+        background: transparent;
         padding: 25px;
         box-sizing: border-box;
         width: 100%;
@@ -172,6 +172,11 @@
 
     .ask_boxx {
         display: block;
+    }
+    .box_ask p {
+        font-size: 14px; 
+        line-height: 22px; 
+        margin-top: 20px;
     }
 }
 
