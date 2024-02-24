@@ -693,6 +693,14 @@ ul li a,a{
 	background: #262626 !important;
 }
 
+.accordion-button.collapsed .sk_title span {
+	background: #ADFF2F80;
+}
+
+.accordion-button .sk_title span {
+	background: hsla(84, 100%, 59%, 1);
+}
+
 .accordion-body {
 	background: #171717;
 	padding: 20px;
