@@ -102,6 +102,22 @@
                                         <div class="form_title">
                                             <h3>Add Symbol for Current Price (Optional)</h3>
                                         </div>
+                                    </div> 
+                                    <div class="col-md-6">
+                                        <div class="input_group">
+                                            <label for="">Exchange</label><br>
+                                            <select name="" id="">
+                                                <option value="">Select Exchange</option>
+                                                <option value="">Select Exchange</option>
+                                                <option value="">Select Exchange</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input_group">
+                                            <label for="">Symbol</label><br>
+                                            <input type="text" name="" placeholder="Type to search..." id="">
+                                        </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="input_group">
@@ -134,22 +150,6 @@
                                                 <span class="switch-text">Fixed</span>
                                                 <span class="switch-text text_sk">Incremental</span>
                                               </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input_group">
-                                            <label for="">Exchange</label><br>
-                                            <select name="" id="">
-                                                <option value="">Select Exchange</option>
-                                                <option value="">Select Exchange</option>
-                                                <option value="">Select Exchange</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input_group">
-                                            <label for="">Symbol</label><br>
-                                            <input type="text" name="" placeholder="Type to search..." id="">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -189,6 +189,68 @@
                 </div>
             </section>
             <!--=====================  End Calculator Area  ====================--> 
+
+            <!--=====================  Start Result Area  ====================-->
+            <section class="result_area">
+                <div class="container">
+                    <div class="result_box">
+                        <div class="result_title">
+                            <h2>Result</h2>
+                        </div>
+                        <div class="row gx-5">
+                            <div class="col-md-4">
+                                <div class="single_result_item">
+                                    <h3>N/A</h3>
+                                    <h4>Win PnL</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single_result_item">
+                                    <h3>N/A</h3>
+                                    <h4>Win PnL</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single_result_item">
+                                    <h3>N/A</h3>
+                                    <h4>Win PnL</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result_order">
+                            <div class="result_order_row">
+                                <div class="result_order_left">
+                                    <h4>Results for All Entry Orders</h4>
+                                    <ul>
+                                        <li><p><b>Entry Order 1:</b>  100.00 USD (100 Lots)</p></li>
+                                        <li><p><b>Total Trade Size (USD): </b>   100.00</p></li>
+                                        <li><p><b>Total Amount of Lots:</b>   100</p></li>
+                                    </ul>
+                                </div>
+                                <div class="result_order_left result_order_right">
+                                    <h4>Results for All Exit Orders</h4>
+                                    <ul>
+                                        <li><p><b>Total Potential Loss at Stop Loss (USD): </b>  100.00</p></li>
+                                        <li><p><b>Take Profit 1 (USD):  </b>   0.00</p></li>
+                                        <li><p><b>Total Take Profits (USD): </b>   0.00</p></li>
+                                        <li><p><b>Total Risk/Reward Ratio: </b>   0.00</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="order_info">
+                                <h4>Orders to Place</h4>
+                                <ul>
+                                    <li><p><b>Symbol:</b></p></li>
+                                    <li><p><b>Entry Order 1:</b> 1 - Value 100.00 USD</p></li>
+                                    <li><p><b>Stop Loss Order:</b> 1e-8</p></li>
+                                    <li><p><b>Take Profit 1:</b> 1 - Profit 0.00 USD</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <!--=====================  End Result Area  ====================--> 
 
             <!--=====================  Start Ask Area  ====================--> 
             <section class="ask_area section_padding">

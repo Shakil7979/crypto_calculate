@@ -35,6 +35,24 @@
     .footer ul {
         height: 133px; 
     }
+    .single_result_item h4,
+    .single_result_item h3 {
+        font-size: 32px; 
+    }
+    .result_order_left h4 {
+        font-size: 18px; 
+    }
+    .result_order_left ul li p {
+        font-size: 16px; 
+        line-height: 30px;
+    }
+    .order_info h4 {
+        font-size: 24px; 
+    }
+    .order_info ul li p {
+        font-size: 20px; 
+        line-height: 37px; 
+    }
 }
 
 @media all and (max-width: 767px){
@@ -115,6 +133,33 @@
     .sk_title { 
         gap: 8px;
     }
+    .single_result_item { 
+        margin-bottom: 25px;
+    }
+    .result_order_left h4 { 
+        line-height: 28px;
+    }
+    .result_order_row { 
+        flex-direction: column;
+    }
+
+    .result_order_left {
+        border: none; 
+    }
+
+    .result_order_left.result_order_right {
+        border: none;
+        border-top: 0.5px solid #3e3e3e;
+        padding-left: 0;
+        padding-top: 25px;
+    }
+    .order_info {
+        margin-top: 0;
+    }
+    .result_title h2 {
+        font-size: 30px;
+        line-height: 70px;  
+    }
 }
 
 @media all and (max-width: 575px){
@@ -130,6 +175,10 @@
     .banner-text p {
         font-size: 14px;
         line-height: 21px;
+    }
+    .order_info ul li p {
+        font-size: 16px;
+        line-height: 29px;
     }
 }
 
