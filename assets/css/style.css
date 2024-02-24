@@ -674,7 +674,7 @@ ul li a,a{
 .accordion-item button {
 	text-align: left;
 	padding: 18px;
-	background: #0D0D0D;
+	background: #000;
 	color: #fff;
 	border: none;
 	display: flex;
@@ -683,10 +683,18 @@ ul li a,a{
 	font-size: 16px;
 	line-height: 24px;
 	width: 100%;
+	border-bottom: 1px solid #262626;
+}
+
+.accordion-button.collapsed {
+	background: #000 !important;
+}
+.accordion-button {
+	background: #262626 !important;
 }
 
 .accordion-body {
-	background: #262626;
+	background: #171717;
 	padding: 20px;
 }
 
