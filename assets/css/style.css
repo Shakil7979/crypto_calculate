@@ -26,7 +26,14 @@ ul li a,a{
 .top_header { 
 	background: hsla(0, 0%, 22%, 1);
 }
-
+.logo a img {
+    width: 105px;
+    height: auto;
+}
+.menu a img {
+    width: 50px;
+    height: auto;
+}
 .top_header_content h4 {
 	color: hsla(84, 100%, 59%, 1);
 	font-size: 20px;
@@ -56,7 +63,7 @@ ul li a,a{
 
 .banner_area{ 
 	position: relative;
-	margin: 45px 0 60px 0;
+/*	margin: 45px 0 60px 0;*/
 }
 
 
@@ -64,7 +71,7 @@ ul li a,a{
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 45%;
+	width: 43%;
 }
 
 .banner_bg img {
@@ -113,18 +120,18 @@ ul li a,a{
 	opacity: 0.83;
 }	
 
-.section_padding{
-	padding: 80px 0;
+.section_padding {
+    padding: 80px 0px 55px 0px;
 }
 
 
 /*======================  Calculator CSS  ======================*/
 
 .section_title h3 {
-	font-size: 54px; 
-	color: hsla(0, 0%, 100%, 1);
-	font-weight: 600;
-	line-height: 81px;
+    font-size: 48px;
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 700;
+    line-height: 81px;
 }
 
 .section_title h3 span { 
@@ -133,8 +140,8 @@ ul li a,a{
 }
 
 .section_title {
-	text-align: center;
-	margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 48px;
 }
 
 .calculator_box {
@@ -381,6 +388,10 @@ ul li a,a{
 	gap: 15px;
 }
 
+.ask_area {
+    padding: 70px 0px 100px 0px;
+}
+
 #v-pills-tab button.active {
 	background: #FFFFFF1A;
 } 
@@ -412,10 +423,9 @@ ul li a,a{
 }
 
 .ask_box{
-	margin-top: 50px;
+	margin-top: 40px;
 	position: relative;
 }
- 
 
 .ask_box::after {
 	position: absolute;
@@ -455,9 +465,9 @@ ul li a,a{
 /*======================  Result CSS  ======================*/
 
 .result_box {
-	background: #000;
-	padding: 20px;
-	border-radius: 20px;
+    background: #000;
+    padding: 34px 24px;
+    border-radius: 20px;
 }
 
 .result_title h2 {
@@ -474,7 +484,7 @@ ul li a,a{
 .single_result_item {
 	border: 4px solid #FFFFFF;
 	border-radius: 20px;
-	height: 276px;
+	height: 270px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -489,17 +499,18 @@ ul li a,a{
 }
 
 .single_result_item h4 {
-	font-size: 48px;
-	line-height: 72px;
-	font-weight: 600;
-	color: #fff;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
 }
 
 .result_order {
-	background: #161616;
-	border-radius: 20px;
-	padding: 25px;
-	margin-top: 25px;
+    background: #161616;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 32px;
 }
 
 .result_order_left h4 {
@@ -516,9 +527,10 @@ ul li a,a{
 	line-height: 36px;
 }
 
-.result_order_left ul li p b,
-.order_info ul li p b{
-	font-weight: 500;
+.result_order_left ul li p b, .order_info ul li p b {
+    font-weight: 500;
+    opacity: 1;
+    color: #FFF;
 }
 
 .result_order_row {
@@ -528,19 +540,19 @@ ul li a,a{
 }
 
 .order_info h4 {
-	font-size: 36px;
-	line-height: 54px;
-	color: #ADFF2F;
-	font-weight: 600;
-	margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 54px;
+    color: #ADFF2F;
+    font-weight: 600;
+    margin-bottom: 32px;
 }
 
 
 .order_info ul li p {
-	font-size: 48px;
-	color: #fff;
-	line-height: 72px;
-	opacity: 80%;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 72px;
+    /* opacity: 80%; */
 }
 
 .result_order_left {
@@ -550,12 +562,12 @@ ul li a,a{
 }
 
 .order_info {
-	margin-top: 30px;
+    margin-top: 37px;
 }
 
 .result_order_left.result_order_right {
-	border-left: 1px solid #3e3e3e;
-	padding-left: 20px;
+    border-left: 1px solid #3e3e3e;
+    padding-left: 35px;
 }
 
 
