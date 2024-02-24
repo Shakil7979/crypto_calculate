@@ -516,6 +516,11 @@ ul li a,a{
 	line-height: 36px;
 }
 
+.result_order_left ul li p b,
+.order_info ul li p b{
+	font-weight: 500;
+}
+
 .result_order_row {
 	display: flex;
 	flex-wrap: wrap;
