@@ -208,13 +208,13 @@
         padding: 20px 0px;
     }
     .single_result_item {
-        height: 145px;
+        height: 170px;
     }
     .single_result_item h3 { 
-        line-height: 40px; 
+        line-height: 50px; 
     }
     .single_result_item h4 { 
-        line-height: 40px; 
+        line-height: 50px; 
     }
 }
 
