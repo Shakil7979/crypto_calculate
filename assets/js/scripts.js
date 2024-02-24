@@ -15,6 +15,7 @@ $(document).ready(function(){
 		var data_id = $(this).attr('data_id'); 
 		if(data_id == 2){ 
 			$('.switch_ul3').removeClass('long_3_disable');
+			$('.long_btn3').removeClass('active');
 			$('.long_btn33').addClass('active');
 			$('.multiple_filed').show();
 		}else{
@@ -36,6 +37,13 @@ $(document).ready(function(){
 		$('.hamburger-menu-links').slideToggle();
 
 		return false;
+	});
+ 
+	$(document).on('click','.accordion-item button',function(){  
+		$('.accordion-button i').css({'transform':' rotate(-90deg)'});
+		$('.accordion-button.collapsed i').css({'transform':' rotate(90deg)'}); 
+
+		return false; 
 	});
 	
  

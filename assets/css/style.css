@@ -641,12 +641,13 @@ ul li a,a{
 	display: none;
 	position: absolute;
 	right: 0;
-	top: 100%;
+	top: 57px;
 	background-color: greenyellow;
 	color: #343a40;
 	min-width: 160px;
 	border-radius: 5px;
 	z-index: 99999;
+	border: 1px solid #000;
 }
 
 .hamburger-menu-links a {
@@ -693,6 +694,14 @@ ul li a,a{
 
 .ask_boxx {
 	display: none;
+}
+
+.accordion-item button i {
+	transform: rotate(90deg);
+}
+ 
+.accordion-button.sk_icon i {
+	transform: rotate(-90deg);
 }
 
 /*======================  Header CSS  ======================*/
