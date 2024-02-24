@@ -350,6 +350,11 @@
         <script src="assets/js/scripts.js"></script>
 
         <script>
+
+            	$('.toggle').click(function(){
+                    console.log($(this + 'input').val())
+                })
+
             window.onload = function() {
               var toggles = document.querySelectorAll('.toggle');
               toggles.forEach(function(toggle) {
