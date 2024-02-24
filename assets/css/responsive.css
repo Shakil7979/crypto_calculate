@@ -160,6 +160,9 @@
         font-size: 30px;
         line-height: 70px;  
     }
+    .calculator_box { 
+        padding: 30px 20px; 
+    }
 }
 
 @media all and (max-width: 575px){
