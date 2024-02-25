@@ -722,6 +722,11 @@ ul li a,a{
 	transform: rotate(-90deg);
 }
 
+.input_group.auto_gent input {
+	background: #343A40;
+	border: none;
+}
+
 /*======================  Header CSS  ======================*/
 
 /* 

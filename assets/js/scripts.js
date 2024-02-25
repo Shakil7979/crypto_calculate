@@ -47,6 +47,56 @@ $(document).ready(function(){
 		return false; 
 	});
 	
+
+	$(document).on('change', '#number_entry', function(){
+		var number_entry = parseInt($(this).val());  
+		$('.sk_num_add').html(number_entry);
+	
+		var addDiv = ''; 
+	
+		for (let index = 2; index < number_entry; index++) { 
+	
+			addDiv += `<div class="input_group auto_gent">
+							<label for="">Entry Order ` + index + ` (Auto Generated)</label><br>
+							<input disabled type="number" name="entry_order[]" placeholder="Enter entry order here...">
+					   </div>`;
+			
+		}
+
+		$('.sk_append').html(addDiv);
+	  
+	});
+
+	$(document).on('change', '#take_profit_select', function(){
+		var take_profit_select = parseInt($(this).val());   
+	
+		var addDivs = ''; 
+	
+		for (let index = 0; index < take_profit_select; index++) { 
+
+			var dataindex = index + 1;
+	
+			addDivs += `<div class="row gx-5">
+							<div class="col-6">
+								<div class="input_group input_append_profit">
+									<label for="">Take Profit `+dataindex+` </label><br>
+									<input type="number" name="" placeholder="Enter Take Profit `+dataindex+` Price" id="">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="input_group input_append_profit">
+									<label for="">Take Profit `+dataindex+` (%)</label><br>
+									<input type="number" name="" placeholder="33" id="">
+								</div>
+							</div>
+						</div>`;
+			
+		}
+
+		$('.sk_profit_add').html(addDivs);
+	  
+	});
+	
  
 
 });

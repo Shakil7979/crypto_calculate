@@ -87,19 +87,19 @@
                                     <div class="col-md-12">
                                         <div class="input_group">
                                             <label for="">Account Balance USD</label> <br>
-                                            <input type="text" name="" placeholder="Enter account balance here..." id="">
+                                            <input type="number" name="" placeholder="Enter account balance here..." id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-6">
                                         <div class="input_group">
                                             <label for="">Risk (%)</label><br>
-                                            <input type="text" name="" placeholder="0" id="">
+                                            <input type="number" name="" placeholder="Percentage" id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-6">
                                         <div class="input_group">
                                             <label for="">Risk (USD)</label><br>
-                                            <input type="text" name="" placeholder="0.0" id="">
+                                            <input type="number" name="" placeholder="USD Value" id="">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -107,7 +107,7 @@
                                             <h3>Add Symbol for Current Price (Optional)</h3>
                                         </div>
                                     </div> 
-                                    <div class="col-md-6">
+                                    <div class="col-6">
                                         <div class="input_group">
                                             <label for="">Exchange</label><br>
                                             <select name="" id="">
@@ -117,13 +117,13 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-6">
                                         <div class="input_group">
                                             <label for="">Symbol</label><br>
                                             <input type="text" name="" placeholder="Type to search..." id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-4"> 
+                                    <div class="col-lg-4 col-md-6"> 
                                         <div class="input_group">
                                             <label for="">Order Side</label><br>
                                             <ul class="switch_ul">
@@ -132,7 +132,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-4"> 
+                                    <div class="col-lg-4 col-md-6"> 
                                         <div class="input_group">
                                             <label for="">Entry Type</label><br>
                                             <ul class="switch_ul switch_ul2">
@@ -141,7 +141,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-4"> 
+                                    <div class="col-lg-4 col-md-12"> 
                                         <div class="input_group">
                                             <label for="">Entry Type</label><br>
                                             <ul class="switch_ul switch_ul3 long_3_disable">
@@ -153,53 +153,58 @@
                                     <div class="col-md-12 multiple_filed">
                                         <div class="input_group">
                                             <label for=""> Number of Entry Orders </label><br>
-                                            <select name="" id="">
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                                <option value="">4</option>
-                                                <option value="">5</option>
-                                                <option value="">6</option>
+                                            <select name="" id="number_entry"> 
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="input_group">
                                             <label for="">Entry Order 1</label><br>
-                                            <input type="text" name="" placeholder="Enter entry order here..." id="">
+                                            <input type="number" name="" placeholder="Enter entry order here..." id="">
                                         </div>
                                     </div>
+                                    <div class="col-md-12 multiple_filed sk_append"></div>
                                     <div class="col-md-12 multiple_filed">
                                         <div class="input_group">
-                                            <label for="">Entry Order 2</label><br>
-                                            <input type="text" name="" placeholder="Enter entry order here..." id="">
+                                            <label for="">Entry Order <span class="sk_num_add">2</span></label><br>
+                                            <input type="number" name="" placeholder="Enter entry order here..." id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-6">
                                         <div class="input_group">
                                             <label for="">Stop Loss (%)</label><br>
-                                            <input type="text" name="" placeholder="0" id="">
+                                            <input type="number" name="" placeholder="0" id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-6">
                                         <div class="input_group">
                                             <label for="">Stop Loss (USD)</label><br>
-                                            <input type="text" name="" placeholder="0.0" id="">
+                                            <input type="number" name="" placeholder="0.0" id="">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="input_group">
                                             <label for="">Take Profit Orders</label><br>
-                                            <select name="" id="">
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                                <option value="">4</option>
-                                                <option value="">5</option>
-                                                <option value="">6</option>
+                                            <select name="" id="take_profit_select">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-12 sk_profit_add">
+                                        
+                                    </div>
+                                    
                                     <div class="col-md-12">
                                         <div class="input_btn">
                                             <button class="btn_2">Reset</button>

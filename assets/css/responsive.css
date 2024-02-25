@@ -178,6 +178,20 @@
         line-height: 22px; 
         margin-top: 20px;
     }
+    .input_group select, .input_group input {
+        height: inherit;
+        padding: 8px 10px;
+        border-radius: 5px;
+    }
+    .switch_ul li a { 
+        font-size: 14px; 
+    }
+    .switch_ul { 
+        width: 142px; 
+    }
+    .switch_ul.switch_ul2 {
+        width: 175px;
+    }
 }
 
 @media all and (max-width: 575px){
