@@ -95,8 +95,7 @@ $(document).ready(function(){
 			
 		}
 
-		$('.sk_profit_add').html(addDivs);
-		
+		$('.sk_profit_add').html(addDivs); 
 		$('.sk_module_val').attr('value',data_module); 
 	
 	  
