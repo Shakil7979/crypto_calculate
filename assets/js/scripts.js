@@ -51,6 +51,7 @@ $(document).ready(function(){
 	$(document).on('change', '#number_entry', function(){
 		var number_entry = parseInt($(this).val());  
 		$('.sk_num_add').html(number_entry);
+		$('.sk_placeholder').attr('placeholder', 'Enter Entry Order '+number_entry); 
 	
 		var addDiv = ''; 
 	
@@ -58,7 +59,7 @@ $(document).ready(function(){
 	
 			addDiv += `<div class="input_group auto_gent">
 							<label for="">Entry Order ` + index + ` (Auto Generated)</label><br>
-							<input disabled type="number" name="entry_order[]" placeholder="Enter entry order here...">
+							<input disabled type="number" name="entry_order[]" placeholder="Enter Entry Order ` + index + `">
 					   </div>`;
 			
 		}
@@ -69,7 +70,8 @@ $(document).ready(function(){
 
 	$(document).on('change', '#take_profit_select', function(){
 		var take_profit_select = parseInt($(this).val());   
-	
+
+		var data_module =  Math.ceil(100 / take_profit_select)
 		var addDivs = ''; 
 	
 		for (let index = 0; index < take_profit_select; index++) { 
@@ -86,7 +88,7 @@ $(document).ready(function(){
 							<div class="col-6">
 								<div class="input_group input_append_profit">
 									<label for="">Take Profit `+dataindex+` (%)</label><br>
-									<input type="number" name="" placeholder="33" id="">
+									<input type="number" name="" class="sk_module_val" value="">
 								</div>
 							</div>
 						</div>`;
@@ -94,6 +96,9 @@ $(document).ready(function(){
 		}
 
 		$('.sk_profit_add').html(addDivs);
+		
+		$('.sk_module_val').attr('value',data_module); 
+	
 	  
 	});
 	
